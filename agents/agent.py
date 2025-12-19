@@ -50,11 +50,12 @@ async def entrypoint(payload):
 ユーザーの質問に丁寧に答えてください。
 天気情報が必要な場合は、get_weatherツールを使用してください。"""
     )
+    return agent(message)
 
-    stream_messages = agent.stream_async(message)
-    async for msg in stream_messages:
-        if "event" in msg:
-            yield msg
+    # stream_messages = agent.stream_async(message)
+    # async for msg in stream_messages:
+    #     if "event" in msg:
+    #         yield msg
 
 if __name__ == "__main__":
     app.run()
