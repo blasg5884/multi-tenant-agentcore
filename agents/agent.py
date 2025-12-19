@@ -23,7 +23,7 @@ def get_weather(city: str) -> str:
     return weather_data.get(city, f"{city}の天気情報は取得できませんでした。")
 
 @app.entrypoint
-async def entrypoint(payload):
+def entrypoint(payload):
     """
     Main entrypoint for the agent.
     This function is called when the agent is invoked.
