@@ -3,6 +3,8 @@
 Amazon Bedrock AgentCore Runtime でマルチテナントを実現するサンプルです。
 属性ベースのアクセス制御（ABAC）を用いて、テナントごとに S3 オブジェクトへのアクセスを分離します。
 
+![abac-architecture](./images/abac-architecture.drawio.png)
+
 ## 構成
 
 ```
