@@ -3,6 +3,7 @@ import * as cdk from 'aws-cdk-lib';
 import { AgentcoreStack } from '../lib/agentcore-stack';
 
 const app = new cdk.App();
+
 new AgentcoreStack(app, 'AgentcoreStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
